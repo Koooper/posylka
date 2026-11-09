@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#C8201A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect x='3' y='9' width='28' height='21' rx='4' fill='%23B98F55'/%3E%3Crect x='14' y='9' width='6' height='21' fill='%23C8201A'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="module" src="/assets/js/common.js"></script>
+  {{script}}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{header}}
+  <main id="main" tabindex="-1">
+    {{sectionNav}}
+    {{content}}
+    {{next}}
+  </main>
+  {{footer}}
+  <div class="pop" id="pop" role="dialog" aria-modal="false" aria-labelledby="pop-w" hidden></div>
+  <div class="translation-tooltip" id="translation-tooltip" role="tooltip" lang="en" data-i18n-ignore hidden></div>
+</body>
+</html>

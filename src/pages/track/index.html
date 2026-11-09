@@ -1,0 +1,36 @@
+<noscript><div class="wrap noscript"><p>This activity needs JavaScript. You can still read the <a href="/network/">network overview</a> and <a href="/sources/">source library</a>.</p></div></noscript>
+<section class="hero" id="track">
+  <div class="wrap">
+    <div>
+      <p class="ua-line" lang="uk">Де моя посилка?</p>
+      <h1>Choose a parcel. Follow its journey.</h1>
+      <p><span lang="uk">Нова пошта</span> (Nova Poshta, literally “New Post”) does business in English as Nova Post, part of the NOVA group. It is the private delivery company most Ukrainians rely on. Since Russia’s full-scale invasion in February 2022 it has kept parcels moving through blackouts, air-raid alerts and missile strikes. Track five parcels and meet the people who move them.</p>
+      <p class="hero-small">“<span lang="uk">Де моя посилка?</span>” means “Where is my parcel?” It may be the most-typed question in Ukraine.</p>
+    </div>
+    <div class="track-card">
+      <label for="tn">Track a parcel</label>
+      <p class="sim" id="sim-note"><b>Interactive educational simulation.</b> Five fictional parcels; no live tracking. Messages, timings and app screens are illustrative.</p>
+      <div class="track-row">
+        <input id="tn" inputmode="numeric" autocomplete="off" maxlength="17" placeholder="Example: 20 4501 2345 6789" aria-describedby="sim-note tn-err" aria-controls="mine-list">
+        <button class="btn ghost" id="tn-clear" hidden>Clear</button>
+        <button class="btn" id="tn-go">Track</button>
+      </div>
+      <div class="err" id="tn-err" role="status"></div>
+      <div class="mine">
+        <h2 class="mine-h">Choose a story <span lang="uk">(Приклади посилок)</span></h2>
+        <div id="mine-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <h2>The journey</h2>
+    <p class="lede">All times are Kyiv time. Each update is one moment in the parcel’s trip. Switch between what the customer sees and what the staff are doing. Tap any <button class="term" data-k="посилка" aria-haspopup="dialog" aria-expanded="false">underlined word</button> to learn it.</p>
+    <div id="journey-root">
+      <div class="empty">Pick a parcel from “Choose a story” above to start tracking. Each takes a different route: across the country, across a border, across an ocean, from a US warehouse to a city 30 km from Russia, and from a US lab to a workshop at the front.</div>
+    </div>
+    <p class="note">The people in these stories are composites. The rules, prices, procedures and events come from published reporting and company statements up to October 2026; see the <a href="/sources/">source library</a>.</p>
+  </div>
+</section>
